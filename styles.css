@@ -1,17 +1,69 @@
 canvas {
   width: 800px;
-  height: 800px;
-  border: 5px solid black;
+  height: 700px;
+  background-color: white;
+  border: 10px solid #0e7a97;
+  border-radius: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background: rgb(248, 247, 238);
+  width: 100%;
+  height: 100vh;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
-body {
+#container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+#icons-container {
+  height: 400px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+#icons-container .btn-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+#icons-container button {
+  border: 1px solid #0e7a97;
+  background: white;
+  height: 40px;
+  border-radius: 7px;
+}
+.btn-container:last-child {
+  width: 250px;
+  margin-left: 5px;
 }
 
 .color-option {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 64;
+}
+
+.hidden {
+  display: none;
 }
