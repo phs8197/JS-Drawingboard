@@ -241,5 +241,4 @@ fileInput.addEventListener("change", onFileChange);
 SaveBtn.addEventListener("click", onSaveClick);
 squareBtn.addEventListener("click", handleRectClick);
 lineBtn.addEventListener("click", handleLineClick);
-textBtn.addEventListener("click", handleTextClick);
 // resizeBtn.addEventListener("click", handleResizeClick);

@@ -12,137 +12,139 @@
     />
   </head>
   <body>
-    <canvas></canvas>
-    <div id="container">
-      <div id="icons-container">
-        <div class="btn-container">
-          <button id="fill-btn">
-            <span class="material-symbols-rounded"> format_color_fill </span>
-          </button>
-          <button id="brush-btn">
-            <span class="material-symbols-rounded"> brush </span>
-          </button>
-          <button id="square-btn">
-            <span class="material-symbols-rounded"> crop_square </span>
-          </button>
+    <div class="wrapper">
+      <canvas></canvas>
+      <div id="container">
+        <div id="icons-container">
+          <div class="btn-container">
+            <button id="fill-btn">
+              <span class="material-symbols-rounded"> format_color_fill </span>
+            </button>
+            <button id="brush-btn">
+              <span class="material-symbols-rounded"> brush </span>
+            </button>
+            <button id="square-btn">
+              <span class="material-symbols-rounded"> crop_square </span>
+            </button>
+          </div>
+          <div class="btn-container">
+            <button id="line-btn">
+              <span class="material-symbols-rounded"> timeline </span>
+            </button>
+
+            <button id="Reset-btn">
+              <span class="material-symbols-rounded"> restart_alt </span>
+            </button>
+
+            <button id="eraser-btn">
+              <span class="material-symbols-rounded"> how_to_vote </span>
+            </button>
+          </div>
         </div>
         <div class="btn-container">
-          <button id="line-btn">
-            <span class="material-symbols-rounded"> timeline </span>
-          </button>
-
-          <button id="Reset-btn">
-            <span class="material-symbols-rounded"> restart_alt </span>
-          </button>
-
-          <button id="eraser-btn">
-            <span class="material-symbols-rounded"> how_to_vote </span>
-          </button>
+          <input type="file" accept="image/*" id="file" />
+          <!-- <input
+            type="text"
+            placeholder="Write and then double click"
+            id="text"
+          /> -->
+          <button id="save">Save Image</button>
+          <input
+            id="line-width"
+            type="range"
+            min="1"
+            max="10"
+            value="5"
+            step="0.5"
+          />
+          <input type="color" id="color" />
         </div>
       </div>
-      <div class="btn-container">
-        <input type="file" accept="image/*" id="file" />
-        <!-- <input
-          type="text"
-          placeholder="Write and then double click"
-          id="text"
-        /> -->
-        <button id="save">Save Image</button>
-        <input
-          id="line-width"
-          type="range"
-          min="1"
-          max="10"
-          value="5"
-          step="0.5"
-        />
-        <input type="color" id="color" />
-      </div>
-    </div>
-    <div class="color-container">
-      <div
-        class="color-option"
-        style="background-color: #000"
-        data-color="#000"
-      ></div>
+      <div class="color-container">
+        <div
+          class="color-option"
+          style="background-color: #000"
+          data-color="#000"
+        ></div>
 
-      <div
-        class="color-option"
-        style="background-color: #f44336"
-        data-color="#f44336"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #e91e63"
-        data-color="#e91e63"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #9c27b0"
-        data-color="#9c27b0"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #673ab7"
-        data-color="#673ab7"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #3f51b5"
-        data-color="#3f51b5"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #2196f3"
-        data-color="#2196f3"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #03a9f4"
-        data-color="#03a9f4"
-      ></div>
-    </div>
-    <div class="color-container">
-      <div
-        class="color-option"
-        style="background-color: #fff"
-        data-color="#fff"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #009688"
-        data-color="#009688"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #4caf50"
-        data-color="#4caf50"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #8bc34a"
-        data-color="#8bc34a"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #cddc39"
-        data-color="#cddc39"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #ffeb3b"
-        data-color="#ffeb3b"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #ffc107"
-        data-color="#ffc107"
-      ></div>
-      <div
-        class="color-option"
-        style="background-color: #ff9800"
-        data-color="#ff9800"
-      ></div>
+        <div
+          class="color-option"
+          style="background-color: #f44336"
+          data-color="#f44336"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #e91e63"
+          data-color="#e91e63"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #9c27b0"
+          data-color="#9c27b0"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #673ab7"
+          data-color="#673ab7"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #3f51b5"
+          data-color="#3f51b5"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #2196f3"
+          data-color="#2196f3"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #03a9f4"
+          data-color="#03a9f4"
+        ></div>
+      </div>
+      <div class="color-container">
+        <div
+          class="color-option"
+          style="background-color: #fff"
+          data-color="#fff"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #009688"
+          data-color="#009688"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #4caf50"
+          data-color="#4caf50"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #8bc34a"
+          data-color="#8bc34a"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #cddc39"
+          data-color="#cddc39"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #ffeb3b"
+          data-color="#ffeb3b"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #ffc107"
+          data-color="#ffc107"
+        ></div>
+        <div
+          class="color-option"
+          style="background-color: #ff9800"
+          data-color="#ff9800"
+        ></div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
