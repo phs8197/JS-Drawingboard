@@ -16,14 +16,14 @@ const resizeBtn = document.getElementById("resize-btn");
 const EraseBtn = document.getElementById("eraser-btn");
 const fileInput = document.getElementById("file");
 const SaveBtn = document.getElementById("save");
-canvas.width = 1000;
-canvas.height = 700;
+canvas.width = 600;
+canvas.height = 600;
 
 ctx.lineWidth = lineWidth.value;
 ctx.lineCap = "round";
 
-let CANVAS_WIDTH = 1000;
-let CANVAS_HEIGHT = 700;
+let CANVAS_WIDTH = 600;
+let CANVAS_HEIGHT = 600;
 
 let isPainting = false;
 let isFilling = false;
