@@ -4,11 +4,8 @@
 각 이미지에 맞게 클릭을 하면 그에 맞는 기능들을 구현하였습니다. <br>
 <p align="space-between" style="display: flex;">
   <br>
-  <img src="./image/11.png" width="32.5%">
-  <img src="./image/12.png" width="32.5%">
-  <img src="./image/13.png" width="32.5%">
-  <img src="./image/14.png" width="32.5%">
-  <img src="./image/15.png" width="32.5%">
+  <img src="./img/11.png" width="98%">
+
   <br>
 </p>
 
