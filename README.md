@@ -53,10 +53,10 @@
 
 
 <!-- Stack Icon Refernces -->
-[html]: /image/stack/html.svg
-[css]: /image/stack/css.svg
-[figma]: /image/stack/figma.svg
-[ts]: /image/stack/typescript.svg
-[js]: /image/stack/javascript.svg
-[react]: /image/stack/react.svg
-[node]: /image/stack/node.svg
+[html]: /img/stack/html.svg
+[css]: /img/stack/css.svg
+[figma]: /img/stack/figma.svg
+[ts]: /img/stack/typescript.svg
+[js]: /img/stack/javascript.svg
+[react]: /img/stack/react.svg
+[node]: /img/stack/node.svg
